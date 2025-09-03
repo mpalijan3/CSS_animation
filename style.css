@@ -7,6 +7,7 @@ body {
   justify-content: center;
   align-items: center;
   background: url("./media/park.jpg") no-repeat center/cover; 
+  background-attachment: fixed;
 }
 
 .container {
@@ -33,16 +34,19 @@ body {
 .c {
   background-color: rgba(0,0,0,0.7); 
   animation-delay: 0s;
+  animation-iteration-count: 1;
 }
 
 .s1 {
   background-color: rgba(200, 50, 30, 0.6); 
-  animation-delay: 0.5s;
+  animation-delay: 1.5s;
+  animation-iteration-count: 1;
 }
 
 .s2 {
   background-color: rgba(200, 150, 50, 0.7);
-  animation-delay: 1s;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
 }
 
 @keyframes slideIn {
