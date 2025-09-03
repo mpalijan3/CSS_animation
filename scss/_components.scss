@@ -1,0 +1,30 @@
+.box {
+  width: $box-size;
+  height: $box-size;
+  font-family: $font-family-main;
+  font-size: $font-size-box;
+  font-weight: $font-weight-main;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid $color-border;
+  color: $color-text;
+  opacity: 0;
+  transform: $slide-transform-start;
+  animation: slideIn $slide-duration $slide-ease forwards;
+
+  &.c {
+    background-color: $color-c-bg; 
+    animation-delay: 0s;
+  }
+
+  &.s1 {
+    background-color: $color-s1-bg; 
+    animation-delay: 0.5s;
+  }
+
+  &.s2 {
+    background-color: $color-s2-bg; 
+    animation-delay: 1s;
+  }
+}
